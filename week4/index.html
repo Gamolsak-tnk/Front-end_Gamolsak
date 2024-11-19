@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratu Shop</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #e56e18;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .top-right {
+            text-align: right;
+            font-size: 14px;
+            padding: 0 20px;
+            margin-bottom: 5px;
+        }
+        .top-right a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .top-right a:hover {
+            color: #ffc67c;
+        }
+        .logo-search {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+        header img {
+            width: 120px;
+            height: auto;
+        }
+        .logo-search h1 {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        header input[type="text"] {
+            padding: 10px;
+            font-size: 14px;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        header button {
+            padding: 10px 16px;
+            font-size: 14px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        header button:hover {
+            background-color: #555;
+        }
+
+        /* Category navigation styling */
+        .categories {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffc67c;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .categories span {
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .categories span:hover {
+            color: #e56e18;
+        }
+
+        /* Product section styling */
+        .product-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+        .product-section h2 {
+            color: #e74c3c;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .product-item {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 180px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .product-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .product-item p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .logo-search {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header input[type="text"] {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .categories {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-right">
+        <a href="#">สมัครสมาชิก</a> | <a href="#">เข้าสู่ระบบ</a>
+    </div>
+    <div class="logo-search">
+        <img src="/img/งานออกเเบบ/main-removebg-preview 1.png" alt="PET Shop Logo">
+        <h1>PET Shop</h1>
+        <div>
+            <input type="text" placeholder="ค้นหา...">
+            <button type="submit">ค้นหา</button>
+        </div>
+    </div>
+    <div class="categories">
+        <span>หมวดหมู่สินค้า</span>
+        <span>หมา</span>
+        <span>แมว</span>
+        <span>หนูแฮมสเตอร์</span>
+        <span>สินค้า</span>
+    </div>
+</header>
+
+<section class="product-section">
+    <h2>สินค้า ลดราคา</h2>
+    <div class="product-container">
+        <div class="product-item">
+            <img src="https://dummyimage.com/100x150/ccc/000&text=Product+1" alt="อาหารสุนัข ไอลิสติก">
+            <p>อาหารสุนัข ไอลิสติก</p>
+            <p class="product-price">฿250</p>
+        </div>
+        <div class="product-item">
+            <img src="https://dummyimage.com/100x150/ccc/000&text=Product+2" alt="อาหารสุนัข Royal Canin">
+            <p>อาหารสุนัข Royal Canin</p>
+            <p class="product-price">฿499</p>
+        </div>
+        <div class="product-item">
+            <img src="https://dummyimage.com/100x150/ccc/000&text=Product+3" alt="อาหารสุนัขไท สมาร์ทฮาร์ท ไลฟ์">
+            <p>อาหารสุนัขไท สมาร์ทฮาร์ท ไลฟ์</p>
+            <p class="product-price">฿299</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2023 PET Shop. All rights reserved.
+</footer>
+
+</body>
+</html>
